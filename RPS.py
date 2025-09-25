@@ -35,7 +35,7 @@ def player(prev_opponent_play, opponent_history = []):
         opponent_quincy_counter = (opponent_quincy_counter + 1) % 5
         return opponent_quincy_list[opponent_quincy_counter]
     
-    # abbey
+    # sam
     if(len(set(opponent_list)) == 1 and opponent_history[-5:] == ['P', 'P', 'R', 'R', 'R']):
         opponent_list[1] = True
 
@@ -72,7 +72,7 @@ def player(prev_opponent_play, opponent_history = []):
         prev_play = ideal_response[prediction]
         return prev_play
 
-    # kris
+    # rupert
     if(len(set(opponent_list)) == 1 and opponent_history[-5:] == ['P', 'R', 'R', 'R', 'R']):
         opponent_list[2] = True
 
@@ -84,7 +84,7 @@ def player(prev_opponent_play, opponent_history = []):
         prev_play = ideal_response[prev_play]
         return prev_play
 
-    # mrugesh
+    # henry
     if(len(set(opponent_list)) == 1 and opponent_history[-5:] == ['R', 'R', 'R', 'R', 'R']):
         opponent_list[3] = True
     
